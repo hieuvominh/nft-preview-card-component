@@ -28,7 +28,7 @@ Frontend Mentor Challenge for Creating a NFT preview card component with Respons
 
 - Solution URL: [GIT Repository](https://github.com/hieuvominh/nft-preview-card-component)
 
-- Live Site URL: [Preview]()
+- Live Site URL: [Preview](https://nft-preview-card-component-omega-murex.vercel.app/)
 
 ### Built with
 
