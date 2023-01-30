@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | NFT preview card component</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-color: rgba(1, 148, 164, 0.4);
+        }
+        
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        
+        .icon {
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0d192b]">
+    <main class="flex w-[100vw] h-[100vh] justify-center items-center text-white">
+        <div class="bg-[#14253d] max-w-[21.875rem] rounded-2xl shadow-lg p-6">
+            <div class="container">
+                <img class="rounded-2xl  cursor-pointer" src="images/image-equilibrium.jpg" />
+                <div class="overlay">
+                    <a href="#" class="icon" title="User Profile">
+                        <img src="images/icon-view.svg" />
+                    </a>
+                </div>
+            </div>
+            <div class="mt-4"><a class="text-2xl font-semibold cursor-pointer hover:text-[#26f3ef]">Equilibrium #3429</a></div>
+            <div class="mt-4 text-lg text-[#617792]">Our Equilibrium collection promotes balance and calm.</div>
+            <div class="flex justify-between mt-6 mb-6">
+                <div class="flex gap-2 tracking-[0.024em]">
+                    <img class="object-none" src="images/icon-ethereum.svg" />
+                    <div class="text-[#00fff8] font-semibold">0.041 ETH</div>
+                </div>
+                <div class="flex gap-2 tracking-[0.024em]">
+                    <img class="object-none" src="images/icon-clock.svg" />
+                    <div class="text-[#8bacd9]">3 days left</div>
+                </div>
+            </div>
+            <div class="border-t pt-6 flex gap-4">
+                <img class="w-[33px] h-[33px] rounded-full" src="images/image-avatar.png" />
+                <div class="text-[#8bacd9] flex">
+                    <div>Creation of</div>
+                    <div class="ml-1 text-white hover:text-[#26f3ef]">Jules Wyvern</div>
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>
